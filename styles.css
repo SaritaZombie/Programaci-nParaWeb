@@ -153,11 +153,15 @@ footer{
 
 /*Responsive*/
 @media (max-width: 768px) {
-	header {
-        position: static !important;
-		top: auto !important;
+
+    /* Header deja de ser sticky y fluye normalmente */
+    header {
+        position: static !important; /* ya no queda pegado */
+        top: auto !important;
+        width: 100%;
     }
-	
+
+    /* Contenedor principal en columna */
     .divisionVertical {
         flex-direction: column;
     }
@@ -166,18 +170,38 @@ footer{
         width: 100%;
     }
 
-	.izquierda {
-    	display: flex;
-    	flex-direction: column;
-    	align-items: center;
-	}
+    /* Izquierda se centra */
+    .izquierda {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* centra horizontalmente la imagen y el texto */
+    }
 
+    /* Contenedor de la imagen centrado */
+    .imagen {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* centra imagen horizontalmente */
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* La imagen en sí */
     .img {
-        width: 50%; 
+        width: 50%; /* ajusta según el tamaño que quieras */
         height: auto;
+        border-radius: 50%;
+        border: 3px solid #F4C2FF;
         display: block;
     }
 
+    /* Nombre centrado */
+    .imagen h1 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Ajustes para listas y bloques */
     .lista, .lista2 {
         flex-direction: column; 
         width: 100%;
@@ -187,8 +211,9 @@ footer{
         width: 100%;
         margin-bottom: 10px;
     }
-
 }
+
+
 
 
 
