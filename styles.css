@@ -155,6 +155,7 @@ footer{
 @media (max-width: 768px) {
 	header {
         position: static !important;
+		top: auto !important;
     }
 	
     .divisionVertical {
@@ -164,6 +165,12 @@ footer{
     .izquierda, .derecha {
         width: 100%;
     }
+
+	.izquierda {
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+	}
 
     .img {
         width: 35%; 
@@ -182,6 +189,7 @@ footer{
     }
 
 }
+
 
 
 
