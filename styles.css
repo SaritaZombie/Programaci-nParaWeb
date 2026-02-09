@@ -153,8 +153,8 @@ footer{
 
 /*Responsive*/
 @media (max-width: 768px) {
-	.header {
-        position: static;
+	header {
+        position: static !important;
     }
 	
     .divisionVertical {
@@ -182,6 +182,7 @@ footer{
     }
 
 }
+
 
 
 
