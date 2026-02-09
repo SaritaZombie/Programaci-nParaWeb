@@ -176,6 +176,7 @@ footer{
         width: 35%; 
         height: auto;
         display: block;
+		margin: 0;
     }
 
     .lista, .lista2 {
@@ -189,6 +190,7 @@ footer{
     }
 
 }
+
 
 
 
